@@ -1,0 +1,9 @@
+nguage: python
+
+python:
+  - "3.5"
+  - "3.6"
+
+script:
+  - python -m unittest -vvv
+  - flake8 ./algorithms
