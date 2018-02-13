@@ -1,6 +1,6 @@
 import unittest
 
-from .breadthfirst import breadth_first_search, recursive_bfs
+from .breadthfirst import breadth_first_search
 
 
 class TestBFS(unittest.TestCase):
@@ -16,10 +16,5 @@ class TestBFS(unittest.TestCase):
 
     def test_bfs_can_search(self):
         result = breadth_first_search(self.adj_list)
-        visited_set = set([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
-        self.assertEqual(result, visited_set)
-
-    def test_rbfs_can_search(self):
-        result = recursive_bfs(self.adj_list)
         visited_set = set([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
         self.assertEqual(result, visited_set)
