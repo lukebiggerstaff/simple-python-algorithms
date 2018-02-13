@@ -4,6 +4,7 @@ python implementation of quicksort algorithm
 
 from random import randint
 
+
 def partition(list_, left, right):
     pivot = randint(left, right)
     list_[pivot], list_[left] = list_[left], list_[pivot]
